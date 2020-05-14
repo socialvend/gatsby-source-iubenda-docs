@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  extends: [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 9
+  },
+  "rules": {
+    "space-before-function-paren": ["error", "always"],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "indent": ["warn", 2, {"SwitchCase": 1}],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "never"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "object-curly-spacing": ["error", "never"],
+    "max-len": ["error", { "code": 200, "ignoreStrings": true, "ignoreComments": true, "ignoreTemplateLiterals": true }],
+    "quote-props": ["error", "consistent"],
+    "no-self-assign": 0,
+    "no-use-before-define": "off",
+    "padded-blocks": "off",
+    "curly": "off",
+    "comma-dangle": "off",
+    "nonblock-statement-body-position": "off",
+    "no-plusplus": "off",
+    "class-methods-use-this": "off",
+    "no-shadow": "off",
+    "arrow-parens": "off",
+    "import/prefer-default-export": "off"
+  }
+}
